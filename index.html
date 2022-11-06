@@ -7,9 +7,52 @@
     <title>Weather App</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
 </head>
 <body>
-  
+  <div class="container border border-dark mt-5">
+    <div class="container">
+      <form id="search-form">
+        <div class="row mt-5">
+          <div class="col-9">
+          <input type="text" placeholder="Enter a city name" id ="city-name" />
+          </div>
+          <div class="col-3">
+          <input type="submit" value="Search" style="width: 100%" />
+          </input>
+          </div>
+        </div>
+      </form>
+    </div>
+<div class="container mt-5">
+    <div class="row ">
+      <div class="col-12">
+        <ul class="list">
+          <li id="new-city"> Melbourne </li>
+          <li>Last updated : <span id="day-time"></span></li>
+          <li id="weather-status">Clear sky</li>
+        </ul>
+      </div>
+      <div class="row ">
+         <div class="col-1">
+         <img id="icon" src="http://openweathermap.org/img/w/01n.png" />
+         </div>
+         <div class="col-4">
+          <span class="col-3" id="temperature">30</span>
+          <span id="celcius-link"><button >&degC</button></span>|
+          <span><button id="fahrenhit-link" class="default-button">&degF</button></span> 
+         </div>     
+         <div class="col-7">
+           Humidity <span id="humidity-value">77%</span>
+          <br/>
+          Wind <span id="wind-range">8</span> km/h
+         </div>
+      </div>
+    </div>
+</div>
+<small>
+  <a href="">open source code </a>by Neha Kaur 
+</small>
   <script src="src/app.js"></script>  
 </body>
 </html>
