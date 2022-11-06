@@ -1,0 +1,14 @@
+.list {
+    list-style: none;
+    padding-left: 0%;
+   }
+   
+   .default-button {
+     border: none;
+     background:none;
+   }
+   
+   .current-temperature-type-selection {
+     background-color: brown;
+     background: burlywood;
+   }
